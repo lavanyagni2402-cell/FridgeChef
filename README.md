@@ -1,7 +1,5 @@
 # FridgeChef — a pantry-aware hybrid recipe recommender
 
-Mini project for Recommender Systems (AIM3143), Manipal University Jaipur.
-
 FridgeChef recommends recipes you will like, that you can cook with what is in your fridge,
 and that are safe for your diet and allergies. It is a **pipelined (cascade) hybrid**:
 
