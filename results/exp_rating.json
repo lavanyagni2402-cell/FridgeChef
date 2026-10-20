@@ -1,0 +1,93 @@
+{
+  "n_train_ratings": 244875,
+  "n_test_ratings": 60100,
+  "test_rating_dist": {
+    "1": 0.0043,
+    "2": 0.0085,
+    "3": 0.0295,
+    "4": 0.1398,
+    "5": 0.8179
+  },
+  "Global mean": {
+    "RMSE": 0.5880765712984335,
+    "MAE": 0.4112252404236941
+  },
+  "Always 5 stars": {
+    "RMSE": 0.6352773969285016,
+    "MAE": 0.24161397670549084
+  },
+  "Random (rating distribution)": {
+    "RMSE": 0.7491129495019833,
+    "MAE": 0.5020841671968506,
+    "secs": 0.2
+  },
+  "Baseline (user + item bias)": {
+    "RMSE": 0.5450780940156249,
+    "MAE": 0.34272951501298504,
+    "secs": 0.5
+  },
+  "User-kNN raw (cosine)": {
+    "RMSE": 0.6207533779537062,
+    "MAE": 0.3742959785760158,
+    "secs": 3.7
+  },
+  "User-kNN mean-centred (Pearson)": {
+    "RMSE": 0.6070562466511606,
+    "MAE": 0.35750060153814384,
+    "secs": 4.1
+  },
+  "User-kNN z-score (Pearson)": {
+    "RMSE": 0.609221038805376,
+    "MAE": 0.3489840253857485,
+    "secs": 4.3
+  },
+  "SVD (biased MF, SGD)": {
+    "RMSE": 0.5467443257091257,
+    "MAE": 0.3359371230903761,
+    "secs": 1.8
+  },
+  "SVD++": {
+    "RMSE": 0.5463557375141624,
+    "MAE": 0.3356978151756336,
+    "secs": 33.3
+  },
+  "NMF": {
+    "RMSE": 0.6579271679365974,
+    "MAE": 0.5139962974945793,
+    "secs": 3.0
+  },
+  "Item-kNN raw (cosine)": {
+    "RMSE": 0.5830498035247703,
+    "MAE": 0.3459566778362418,
+    "secs": 50.3
+  },
+  "Item-kNN mean-centred (Pearson)": {
+    "RMSE": 0.601219227060345,
+    "MAE": 0.3432135073984068,
+    "secs": 53.1
+  },
+  "Item-kNN z-score (Pearson)": {
+    "RMSE": 0.6011035499705369,
+    "MAE": 0.3347253225639415,
+    "secs": 55.1
+  },
+  "missing_value_strategies": {
+    "drop (treat as missing)": {
+      "RMSE": 0.5467443257091257,
+      "MAE": 0.3359371230903761
+    },
+    "impute user mean": {
+      "RMSE": 0.5468438699422292,
+      "MAE": 0.33592887031251734
+    },
+    "impute item mean": {
+      "RMSE": 0.5468756698488865,
+      "MAE": 0.3359660385533201
+    },
+    "treat as 1 star (naive)": {
+      "RMSE": 0.5688954386600032,
+      "MAE": 0.37506846838720287
+    }
+  },
+  "n_missing_in_train": 4320
+}

@@ -1,0 +1,941 @@
+{
+  "pantry_size": 25,
+  "n_users": 7450,
+  "share_of_true_next_recipes_cookable": {
+    "0": 0.010734532968564168,
+    "1": 0.0639112313845257,
+    "2": 0.17244556093384017,
+    "3": 0.31994362127816645,
+    "5": 0.6212099752292927
+  },
+  "catalogue_cookable_share": {
+    "0": 0.006166414869633278,
+    "1": 0.04453657991153733,
+    "2": 0.137850684792586,
+    "3": 0.28368434273173343,
+    "5": 0.596447836409071
+  },
+  "pantry_ranking": [
+    {
+      "method": "Taste only (ALS)",
+      "m": null,
+      "P@10": 0.013395973154362417,
+      "R@10": 0.02265954215053859,
+      "F1@10": 0.014242104362904053,
+      "HR@10": 0.11798657718120806,
+      "NDCG@10": 0.020706773593441967,
+      "MAP@10": 0.008931296617578176,
+      "Coverage": 0.07547462223944208,
+      "Novelty": 5.1780314445495605,
+      "avg_missing": 5.011906147003174,
+      "pct_cook_now": 1.148993288590604
+    },
+    {
+      "method": "Fridge only (coverage)",
+      "m": null,
+      "P@10": 0.003248322147651007,
+      "R@10": 0.004105733907913643,
+      "F1@10": 0.0029519457788380436,
+      "HR@10": 0.030201342281879196,
+      "NDCG@10": 0.005310725019513258,
+      "MAP@10": 0.0023465667649112836,
+      "Coverage": 0.08756296009298721,
+      "Novelty": 7.054837226867676,
+      "avg_missing": 0.005422818940132856,
+      "pct_cook_now": 99.48456375838927
+    },
+    {
+      "method": "Cascade (filter, then taste)",
+      "m": 0,
+      "P@10": 0.0031543624161073825,
+      "R@10": 0.0037397028837801638,
+      "F1@10": 0.0027129207433215867,
+      "HR@10": 0.029261744966442953,
+      "NDCG@10": 0.004650836953129624,
+      "MAP@10": 0.0019253258051915771,
+      "Coverage": 0.12181325067803177,
+      "Novelty": 7.920505046844482,
+      "avg_missing": 0.02112751640379429,
+      "pct_cook_now": 99.48456375838927
+    },
+    {
+      "method": "Cascade (filter, then taste)",
+      "m": 1,
+      "P@10": 0.006348993288590604,
+      "R@10": 0.00839335565990072,
+      "F1@10": 0.005790654543708358,
+      "HR@10": 0.057315436241610736,
+      "NDCG@10": 0.009345155136552397,
+      "MAP@10": 0.003920812957298256,
+      "Coverage": 0.12847733436652461,
+      "Novelty": 6.557056427001953,
+      "avg_missing": 0.863852322101593,
+      "pct_cook_now": 13.614765100671141
+    },
+    {
+      "method": "Cascade (filter, then taste)",
+      "m": 2,
+      "P@10": 0.008416107382550336,
+      "R@10": 0.012927706173805814,
+      "F1@10": 0.008463555691278088,
+      "HR@10": 0.07651006711409396,
+      "NDCG@10": 0.012933823068728145,
+      "MAP@10": 0.005554856344725313,
+      "Coverage": 0.10344827586206896,
+      "Novelty": 6.049932956695557,
+      "avg_missing": 1.587691307067871,
+      "pct_cook_now": 5.100671140939597
+    },
+    {
+      "method": "Cascade (filter, then taste)",
+      "m": 3,
+      "P@10": 0.009879194630872482,
+      "R@10": 0.01632296487924248,
+      "F1@10": 0.01021441159183911,
+      "HR@10": 0.09060402684563758,
+      "NDCG@10": 0.0159990096491516,
+      "MAP@10": 0.0070799577598874485,
+      "Coverage": 0.091747384734599,
+      "Novelty": 5.759765148162842,
+      "avg_missing": 2.248912811279297,
+      "pct_cook_now": 2.838926174496644
+    },
+    {
+      "method": "Weighted (alpha=0.2)",
+      "m": null,
+      "alpha": 0.2,
+      "P@10": 0.0031543624161073825,
+      "R@10": 0.0037397028837801638,
+      "F1@10": 0.0027129207433215867,
+      "HR@10": 0.029261744966442953,
+      "NDCG@10": 0.004650836953129624,
+      "MAP@10": 0.0019253258051915771,
+      "Coverage": 0.13335916311507168,
+      "Novelty": 7.909162521362305,
+      "avg_missing": 0.00546308746561408,
+      "pct_cook_now": 99.48456375838927
+    },
+    {
+      "method": "Weighted (alpha=0.4)",
+      "m": null,
+      "alpha": 0.4,
+      "P@10": 0.0031409395973154364,
+      "R@10": 0.0037322457622290823,
+      "F1@10": 0.0027033330156130534,
+      "HR@10": 0.02912751677852349,
+      "NDCG@10": 0.004641342928049903,
+      "MAP@10": 0.0019233177088881788,
+      "Coverage": 0.13335916311507168,
+      "Novelty": 7.908157825469971,
+      "avg_missing": 0.005785234738141298,
+      "pct_cook_now": 99.45234899328858
+    },
+    {
+      "method": "Weighted (alpha=0.6)",
+      "m": null,
+      "alpha": 0.6,
+      "P@10": 0.003409395973154362,
+      "R@10": 0.0039038877750573126,
+      "F1@10": 0.0028895438073773573,
+      "HR@10": 0.03154362416107383,
+      "NDCG@10": 0.004885660810719237,
+      "MAP@10": 0.0019906669093190344,
+      "Coverage": 0.13521890740023246,
+      "Novelty": 7.884588241577148,
+      "avg_missing": 0.01526174508035183,
+      "pct_cook_now": 98.64697986577181
+    },
+    {
+      "method": "Weighted (alpha=0.8)",
+      "m": null,
+      "alpha": 0.8,
+      "P@10": 0.005570469798657718,
+      "R@10": 0.005623001612688476,
+      "F1@10": 0.004421568914338469,
+      "HR@10": 0.04953020134228188,
+      "NDCG@10": 0.007518365186046176,
+      "MAP@10": 0.002999956690356978,
+      "Coverage": 0.15381635025184037,
+      "Novelty": 7.612303733825684,
+      "avg_missing": 0.2277449667453766,
+      "pct_cook_now": 87.81879194630872
+    },
+    {
+      "method": "Weighted (alpha=0.9)",
+      "m": null,
+      "alpha": 0.9,
+      "P@10": 0.009516778523489934,
+      "R@10": 0.012127624945674206,
+      "F1@10": 0.008850420807577667,
+      "HR@10": 0.08281879194630873,
+      "NDCG@10": 0.013537388122369482,
+      "MAP@10": 0.005701714377025978,
+      "Coverage": 0.15955056179775282,
+      "Novelty": 6.80581521987915,
+      "avg_missing": 1.1975436210632324,
+      "pct_cook_now": 57.60536912751678
+    }
+  ],
+  "personas": {
+    "Vegetarian + nut allergy": {
+      "catalogue_share_allowed": 0.15125920185974429,
+      "taste_only_violating_share_of_top10": 0.90245,
+      "taste_only_users_with_any_violation": 1.0,
+      "soft_penalty_0.1_violating_share": 0.0297,
+      "soft_penalty_0.3_violating_share": 0.0,
+      "soft_penalty_1.0_violating_share": 0.0,
+      "cascade_violating_share": 0.0
+    },
+    "Gluten-free + dairy-free": {
+      "catalogue_share_allowed": 0.2499031383184812,
+      "taste_only_violating_share_of_top10": 0.83115,
+      "taste_only_users_with_any_violation": 1.0,
+      "soft_penalty_0.1_violating_share": 0.01775,
+      "soft_penalty_0.3_violating_share": 0.0,
+      "soft_penalty_1.0_violating_share": 0.0,
+      "cascade_violating_share": 0.0
+    },
+    "Vegan": {
+      "catalogue_share_allowed": 0.04385896939170864,
+      "taste_only_violating_share_of_top10": 0.9771,
+      "taste_only_users_with_any_violation": 1.0,
+      "soft_penalty_0.1_violating_share": 0.0635,
+      "soft_penalty_0.3_violating_share": 0.0,
+      "soft_penalty_1.0_violating_share": 0.0,
+      "cascade_violating_share": 0.0
+    },
+    "Egg + shellfish allergy": {
+      "catalogue_share_allowed": 0.6959318093762108,
+      "taste_only_violating_share_of_top10": 0.33975,
+      "taste_only_users_with_any_violation": 0.965,
+      "soft_penalty_0.1_violating_share": 0.00235,
+      "soft_penalty_0.3_violating_share": 0.0,
+      "soft_penalty_1.0_violating_share": 0.0,
+      "cascade_violating_share": 0.0
+    }
+  },
+  "relaxation": {
+    "cases": 2000,
+    "needed_relaxation": 0,
+    "most_common_fix": {},
+    "examples": []
+  },
+  "use_it_up": [
+    {
+      "beta": 0.0,
+      "pct_top10_using_expiring": 23.87,
+      "HR@10": 0.075,
+      "NDCG@10": 0.014956117629161535
+    },
+    {
+      "beta": 0.1,
+      "pct_top10_using_expiring": 98.02,
+      "HR@10": 0.048,
+      "NDCG@10": 0.008523683867371528
+    },
+    {
+      "beta": 0.25,
+      "pct_top10_using_expiring": 98.99,
+      "HR@10": 0.042,
+      "NDCG@10": 0.007745258813210878
+    },
+    {
+      "beta": 0.5,
+      "pct_top10_using_expiring": 98.99,
+      "HR@10": 0.042,
+      "NDCG@10": 0.007745258813210878
+    },
+    {
+      "beta": 1.0,
+      "pct_top10_using_expiring": 98.99,
+      "HR@10": 0.042,
+      "NDCG@10": 0.007745258813210878
+    }
+  ],
+  "swaps": {
+    "buttermilk": [
+      [
+        "sour milk",
+        0.601
+      ],
+      [
+        "fast rise yeast",
+        0.5
+      ],
+      [
+        "white sugar",
+        0.489
+      ],
+      [
+        "applesauce",
+        0.478
+      ]
+    ],
+    "butter": [
+      [
+        "margarine",
+        0.488
+      ],
+      [
+        "oleo",
+        0.371
+      ]
+    ],
+    "sour cream": [
+      [
+        "half-and-half cream",
+        0.339
+      ],
+      [
+        "minute rice",
+        0.316
+      ],
+      [
+        "ranch salad dressing",
+        0.313
+      ],
+      [
+        "evaporated milk",
+        0.303
+      ]
+    ],
+    "heavy cream": [
+      [
+        "whipping cream",
+        0.728
+      ],
+      [
+        "half-and-half",
+        0.585
+      ],
+      [
+        "creme fraiche",
+        0.391
+      ],
+      [
+        "whipped cream",
+        0.382
+      ]
+    ],
+    "brown sugar": [
+      [
+        "splenda granular",
+        0.327
+      ],
+      [
+        "marshmallow cream",
+        0.302
+      ]
+    ],
+    "lemon juice": [],
+    "honey": [
+      [
+        "maple syrup",
+        0.448
+      ],
+      [
+        "orange marmalade",
+        0.424
+      ],
+      [
+        "agave nectar",
+        0.37
+      ],
+      [
+        "apricot jam",
+        0.33
+      ]
+    ],
+    "chicken broth": [
+      [
+        "vegetable broth",
+        0.557
+      ],
+      [
+        "vegetable stock",
+        0.462
+      ],
+      [
+        "instant chicken bouillon granule",
+        0.373
+      ],
+      [
+        "bouillon cube",
+        0.33
+      ]
+    ],
+    "mozzarella cheese": [
+      [
+        "italian cheese blend",
+        0.653
+      ]
+    ],
+    "ricotta cheese": [
+      [
+        "italian seasoned breadcrumb",
+        0.494
+      ],
+      [
+        "cottage cheese",
+        0.486
+      ],
+      [
+        "italian seasoning",
+        0.441
+      ],
+      [
+        "italian style breadcrumb",
+        0.423
+      ]
+    ],
+    "shallot": [
+      [
+        "chive",
+        0.457
+      ],
+      [
+        "salt black pepper",
+        0.431
+      ],
+      [
+        "leek",
+        0.372
+      ],
+      [
+        "cracked black pepper",
+        0.354
+      ]
+    ],
+    "walnut": [
+      [
+        "pecan",
+        0.77
+      ],
+      [
+        "white sugar",
+        0.469
+      ],
+      [
+        "almond",
+        0.425
+      ],
+      [
+        "buttermilk",
+        0.388
+      ]
+    ],
+    "white wine": [
+      [
+        "dry vermouth",
+        0.567
+      ],
+      [
+        "dry sherry",
+        0.471
+      ],
+      [
+        "lemon",
+        0.461
+      ],
+      [
+        "sherry wine",
+        0.454
+      ]
+    ],
+    "mayonnaise": [
+      [
+        "miracle whip",
+        0.743
+      ],
+      [
+        "salad dressing",
+        0.647
+      ],
+      [
+        "ranch dressing",
+        0.484
+      ],
+      [
+        "salad oil",
+        0.303
+      ]
+    ],
+    "spinach": [
+      [
+        "pesto sauce",
+        0.526
+      ],
+      [
+        "asparagus",
+        0.486
+      ],
+      [
+        "swiss chard",
+        0.452
+      ],
+      [
+        "romano cheese",
+        0.443
+      ]
+    ],
+    "basil": [
+      [
+        "italian herb seasoning",
+        0.544
+      ],
+      [
+        "oregano leave",
+        0.532
+      ],
+      [
+        "pesto sauce",
+        0.517
+      ],
+      [
+        "alfredo sauce",
+        0.478
+      ]
+    ],
+    "red wine vinegar": [
+      [
+        "white wine vinegar",
+        0.711
+      ],
+      [
+        "balsamic vinegar",
+        0.625
+      ],
+      [
+        "balsamic vinaigrette",
+        0.469
+      ],
+      [
+        "sherry wine vinegar",
+        0.435
+      ]
+    ],
+    "egg": [],
+    "breadcrumb": [
+      [
+        "seasoned bread crumb",
+        0.681
+      ],
+      [
+        "saltine cracker",
+        0.54
+      ],
+      [
+        "cracker crumb",
+        0.539
+      ],
+      [
+        "white bread",
+        0.464
+      ]
+    ],
+    "maple syrup": [
+      [
+        "honey",
+        0.448
+      ],
+      [
+        "agave nectar",
+        0.44
+      ],
+      [
+        "applesauce",
+        0.433
+      ],
+      [
+        "molasses",
+        0.419
+      ]
+    ]
+  },
+  "critique_examples": [
+    {
+      "reference": "jo mama s world famous spaghetti",
+      "minutes": 80,
+      "ingredients": 16,
+      "quicker": [
+        [
+          "italian sausage pasta",
+          0.472,
+          55,
+          11
+        ],
+        [
+          "italian spaghetti with ham",
+          0.46,
+          30,
+          9
+        ],
+        [
+          "gnocchi with sausage and spinach",
+          0.439,
+          20,
+          9
+        ]
+      ],
+      "fewer ingredients": [
+        [
+          "my crock pot spaghetti sauce",
+          0.493,
+          500,
+          13
+        ],
+        [
+          "italian sausage pasta",
+          0.472,
+          55,
+          11
+        ],
+        [
+          "italian spaghetti with ham",
+          0.46,
+          30,
+          9
+        ]
+      ],
+      "vegetarian": [
+        [
+          "spaghetti with tomatoes and feta",
+          0.394,
+          25,
+          9
+        ],
+        [
+          "pasta with garlic and oil aglio e olio",
+          0.372,
+          20,
+          10
+        ],
+        [
+          "spaghetti with fresh tomatoes and basil",
+          0.347,
+          28,
+          8
+        ]
+      ],
+      "lighter": [
+        [
+          "my crock pot spaghetti sauce",
+          0.493,
+          500,
+          13
+        ],
+        [
+          "linguine with marinara sauce and meatballs",
+          0.491,
+          110,
+          15
+        ],
+        [
+          "pizzeria pizza sauce",
+          0.417,
+          15,
+          11
+        ]
+      ]
+    },
+    {
+      "reference": "kittencal s italian melt in your mouth meatballs",
+      "minutes": 50,
+      "ingredients": 10,
+      "quicker": [
+        [
+          "mock sliders white castles",
+          0.51,
+          20,
+          8
+        ],
+        [
+          "homemade hamburgers",
+          0.508,
+          30,
+          6
+        ],
+        [
+          "german meatballs",
+          0.501,
+          22,
+          11
+        ]
+      ],
+      "fewer ingredients": [
+        [
+          "berthas meatballs",
+          0.799,
+          130,
+          8
+        ],
+        [
+          "chicken meatballs for spaghetti and meatballs",
+          0.597,
+          45,
+          8
+        ],
+        [
+          "smothered meatballs",
+          0.557,
+          50,
+          8
+        ]
+      ],
+      "vegetarian": [
+        [
+          "garlic and herb cream cheese france",
+          0.327,
+          10,
+          10
+        ],
+        [
+          "zucchini stuffing",
+          0.307,
+          70,
+          8
+        ],
+        [
+          "crustless broccoli and cottage cheese pie",
+          0.291,
+          70,
+          12
+        ]
+      ],
+      "lighter": [
+        [
+          "berthas meatballs",
+          0.799,
+          130,
+          8
+        ],
+        [
+          "authentic italian meatballs",
+          0.667,
+          200,
+          9
+        ],
+        [
+          "cheese stuffed meatloaf",
+          0.621,
+          75,
+          9
+        ]
+      ]
+    },
+    {
+      "reference": "oven fried chicken chimichangas",
+      "minutes": 45,
+      "ingredients": 8,
+      "quicker": [
+        [
+          "streamlined chimichangas",
+          0.53,
+          20,
+          9
+        ],
+        [
+          "speedy cheese and chicken enchiladas",
+          0.485,
+          25,
+          8
+        ],
+        [
+          "beef quesadillas",
+          0.4,
+          30,
+          11
+        ]
+      ],
+      "fewer ingredients": [
+        [
+          "crock pot picante chicken",
+          0.434,
+          365,
+          2
+        ],
+        [
+          "chilaquiles with chicken",
+          0.403,
+          35,
+          6
+        ],
+        [
+          "meximelt a la amy",
+          0.397,
+          12,
+          6
+        ]
+      ],
+      "vegetarian": [
+        [
+          "easy veggie enchiladas with quick sauce",
+          0.424,
+          45,
+          15
+        ],
+        [
+          "cheese enchilada stack",
+          0.314,
+          20,
+          5
+        ],
+        [
+          "how to make baked taco salad shell bowls",
+          0.3,
+          20,
+          4
+        ]
+      ],
+      "lighter": [
+        [
+          "crock pot picante chicken",
+          0.434,
+          365,
+          2
+        ],
+        [
+          "chilaquiles with chicken",
+          0.403,
+          35,
+          6
+        ],
+        [
+          "meximelt a la amy",
+          0.397,
+          12,
+          6
+        ]
+      ]
+    }
+  ],
+  "explanation_example": {
+    "pantry": [
+      "butter",
+      "sugar",
+      "egg",
+      "flour",
+      "garlic",
+      "onion",
+      "olive oil",
+      "milk",
+      "cinnamon",
+      "lemon juice",
+      "tomato",
+      "oil",
+      "vanilla",
+      "parsley",
+      "garlic powder",
+      "carrot",
+      "baking powder",
+      "oregano",
+      "thyme",
+      "parmesan cheese",
+      "baking soda",
+      "brown sugar",
+      "zucchini",
+      "cheddar cheese",
+      "honey"
+    ],
+    "recs": [
+      {
+        "recipe": "brussels sprouts in garlic butter",
+        "you_have": "4/5",
+        "missing": [
+          "brussel sprout"
+        ],
+        "minutes": 25.0,
+        "because_you_liked": "zucchini parmesan soup with rice"
+      },
+      {
+        "recipe": "banana banana bread",
+        "you_have": "5/6",
+        "missing": [
+          "banana"
+        ],
+        "minutes": 75.0,
+        "because_you_liked": "chocolate chocolate chip sour cream banana bread"
+      },
+      {
+        "recipe": "sugar browned potatoes",
+        "you_have": "2/3",
+        "missing": [
+          "potato"
+        ],
+        "minutes": 25.0,
+        "because_you_liked": "hasselback potatoes hasselbackspotatis"
+      },
+      {
+        "recipe": "24k carrots",
+        "you_have": "3/4",
+        "missing": [
+          "ginger"
+        ],
+        "minutes": 15.0,
+        "because_you_liked": "chilled cantaloupe soup"
+      },
+      {
+        "recipe": "turkish coffee",
+        "you_have": "1/2",
+        "missing": [
+          "coffee"
+        ],
+        "minutes": 13.0,
+        "because_you_liked": "mexican hot cocoa"
+      }
+    ]
+  },
+  "relaxation_strict": {
+    "Vegan, 15 min, <=5 ingredients, cook now": {
+      "users": 1000,
+      "needed_relaxation_pct": 100.0,
+      "median_feasible": 1.0,
+      "fixes": {
+        "max_missing": 1000
+      },
+      "example": {
+        "feasible": 2,
+        "relaxations": [
+          {
+            "drop": [
+              "max_missing"
+            ],
+            "results": 78
+          }
+        ]
+      }
+    },
+    "Gluten- and dairy-free, 20 min, cook now": {
+      "users": 1000,
+      "needed_relaxation_pct": 10.3,
+      "median_feasible": 17.0,
+      "fixes": {
+        "max_missing": 103
+      },
+      "example": {
+        "feasible": 5,
+        "relaxations": [
+          {
+            "drop": [
+              "max_missing"
+            ],
+            "results": 1220
+          },
+          {
+            "drop": [
+              "max_minutes"
+            ],
+            "results": 16
+          }
+        ]
+      }
+    },
+    "Vegetarian + nut allergy, 30 min, buy at most 1": {
+      "users": 1000,
+      "needed_relaxation_pct": 0.0,
+      "median_feasible": 83.0,
+      "fixes": {},
+      "example": null
+    }
+  }
+}

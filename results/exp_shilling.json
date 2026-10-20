@@ -1,0 +1,162 @@
+{
+  "clean": {
+    "Item-kNN": 0.0004696725711218465,
+    "ALS": 0.0,
+    "SVD_pred": 4.734052979306424
+  },
+  "detection": {
+    "rating features only": {
+      "precision": 0.9989939637826962,
+      "recall": 0.9983243967828418,
+      "F1": 0.9986590680522963,
+      "false_positive_rate": 0.002,
+      "recall_by_attack": {
+        "Random": 0.9946380697050938,
+        "Average": 0.9986595174262735,
+        "Bandwagon": 1.0,
+        "Segment": 1.0
+      },
+      "importance": {
+        "length": 0.33,
+        "std_log_pop": 0.215,
+        "mean_log_pop": 0.21,
+        "DegSim": 0.064,
+        "mean_rating": 0.053,
+        "RDMA": 0.038,
+        "rating_std": 0.034,
+        "WDMA": 0.032,
+        "share_5_star": 0.025
+      }
+    },
+    "rating + timing features": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0,
+      "false_positive_rate": 0.0,
+      "recall_by_attack": {
+        "Random": 1.0,
+        "Average": 1.0,
+        "Bandwagon": 1.0,
+        "Segment": 1.0
+      },
+      "importance": {
+        "active_days": 0.494,
+        "length": 0.172,
+        "std_log_pop": 0.119,
+        "mean_log_pop": 0.105,
+        "DegSim": 0.034,
+        "RDMA": 0.02,
+        "rating_std": 0.018,
+        "mean_rating": 0.017,
+        "WDMA": 0.01,
+        "share_5_star": 0.01
+      }
+    }
+  },
+  "defence_partial": [
+    {
+      "attack": "Random",
+      "HR_attacked": 0.0,
+      "HR_after_defence": 6.709608158883521e-05
+    }
+  ],
+  "attacks": [
+    {
+      "attack": "Random",
+      "size": 0.01,
+      "n_fake": 75,
+      "HR_ItemKNN": 0.0,
+      "HR_ALS": 0.0007380568974771874,
+      "SVD_prediction_shift": 0.1558201630235203
+    },
+    {
+      "attack": "Random",
+      "size": 0.03,
+      "n_fake": 224,
+      "HR_ItemKNN": 0.0,
+      "HR_ALS": 0.07648953301127215,
+      "SVD_prediction_shift": 0.16833520301450466
+    },
+    {
+      "attack": "Random",
+      "size": 0.05,
+      "n_fake": 373,
+      "HR_ItemKNN": 0.0,
+      "HR_ALS": 0.11278851315083199,
+      "SVD_prediction_shift": 0.16404006380412017
+    },
+    {
+      "attack": "Average",
+      "size": 0.01,
+      "n_fake": 75,
+      "HR_ItemKNN": 0.0,
+      "HR_ALS": 0.0008051529790660224,
+      "SVD_prediction_shift": 0.10257475226297075
+    },
+    {
+      "attack": "Average",
+      "size": 0.03,
+      "n_fake": 224,
+      "HR_ItemKNN": 0.0,
+      "HR_ALS": 0.07105475040257649,
+      "SVD_prediction_shift": 0.11166360619245186
+    },
+    {
+      "attack": "Average",
+      "size": 0.05,
+      "n_fake": 373,
+      "HR_ItemKNN": 0.0,
+      "HR_ALS": 0.11496913580246913,
+      "SVD_prediction_shift": 0.1180783088998556
+    },
+    {
+      "attack": "Bandwagon",
+      "size": 0.01,
+      "n_fake": 75,
+      "HR_ItemKNN": 0.023416532474503485,
+      "HR_ALS": 0.005434782608695653,
+      "SVD_prediction_shift": 0.02370993687642109
+    },
+    {
+      "attack": "Bandwagon",
+      "size": 0.03,
+      "n_fake": 224,
+      "HR_ItemKNN": 0.3438003220611916,
+      "HR_ALS": 0.023986849168008587,
+      "SVD_prediction_shift": 0.03074408789680838
+    },
+    {
+      "attack": "Bandwagon",
+      "size": 0.05,
+      "n_fake": 373,
+      "HR_ItemKNN": 0.5060386473429952,
+      "HR_ALS": 0.026402308105206655,
+      "SVD_prediction_shift": 0.03535108704680656
+    },
+    {
+      "attack": "Segment",
+      "size": 0.01,
+      "n_fake": 75,
+      "HR_ItemKNN": 0.02633521202361782,
+      "HR_ALS": 0.0058038110574342465,
+      "SVD_prediction_shift": 0.06581204307264787
+    },
+    {
+      "attack": "Segment",
+      "size": 0.03,
+      "n_fake": 224,
+      "HR_ItemKNN": 0.03743961352657005,
+      "HR_ALS": 0.005367686527106817,
+      "SVD_prediction_shift": 0.10291416145339571
+    },
+    {
+      "attack": "Segment",
+      "size": 0.05,
+      "n_fake": 373,
+      "HR_ItemKNN": 0.0423040794417606,
+      "HR_ALS": 0.005099302200751476,
+      "SVD_prediction_shift": 0.11743275267524922
+    }
+  ],
+  "note": "Run killed (out of memory) during the defence re-check after the Random row; attack and detection results complete. Targets: 4 recipes with 10-12 training reviews; filler 20; detector trained on attacks against 2 targets, tested on the other 2."
+}

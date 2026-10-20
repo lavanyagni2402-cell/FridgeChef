@@ -1,0 +1,77 @@
+<meta charset="utf-8">
+<title>FridgeChef</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+
+<header>
+  <h1>FridgeChef</h1>
+  <p>Recipes you can cook with what's in your fridge.</p>
+</header>
+
+<div class="page">
+  <!-- LEFT: what the user tells us -->
+  <aside class="panel">
+    <label for="ingredient">What's in your fridge?</label>
+    <form id="add-form">
+      <input id="ingredient" list="ingredient-list" placeholder="e.g. eggs" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+    <datalist id="ingredient-list"></datalist>
+    <div id="fridge" class="chips"></div>
+
+    <label for="diet">Diet</label>
+    <select id="diet">
+      <option value="any">No rule</option>
+      <option value="veg">Vegetarian</option>
+      <option value="vegan">Vegan</option>
+    </select>
+
+    <span class="label">Allergies</span>
+    <div class="checks">
+      <label><input type="checkbox" id="a-nuts" value="nuts"> Nuts</label>
+      <label><input type="checkbox" id="a-dairy" value="dairy"> Dairy</label>
+      <label><input type="checkbox" id="a-gluten" value="gluten"> Gluten</label>
+      <label><input type="checkbox" id="a-egg" value="egg"> Egg</label>
+    </div>
+
+    <div class="two">
+      <div>
+        <label for="time">Max time</label>
+        <select id="time">
+          <option value="">Any</option>
+          <option value="15">15 min</option>
+          <option value="30">30 min</option>
+          <option value="60">1 hour</option>
+        </select>
+      </div>
+      <div>
+        <label for="buy">Can buy</label>
+        <select id="buy">
+          <option value="0">0 items</option>
+          <option value="1">1 item</option>
+          <option value="2" selected>2 items</option>
+          <option value="3">3 items</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="loved">A recipe you love</label>
+    <form id="love-form">
+      <input id="loved" list="recipe-list" placeholder="e.g. banana bread" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+    <datalist id="recipe-list"></datalist>
+    <div id="loved-list" class="chips"></div>
+  </aside>
+
+  <!-- RIGHT: recommendations -->
+  <main>
+    <h2 id="heading">Loading recipes…</h2>
+    <div id="results"></div>
+  </main>
+</div>
+
+<footer>Data: Food.com Recipes and User Interactions (Majumder et al., 2019). Check labels if an allergy is serious.</footer>
+
+<script src="app.js"></script>
